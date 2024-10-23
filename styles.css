@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Georgia', serif;
+}
+
+h2 {
+    font-family: 'Verdana', sans-serif;
+}
+
+#about, #contact {
+    background-color: white;
+    margin: 2em auto;
+    padding: 1em;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Add this at the end of your existing styles.css file */
+
+#contact-form {
+    background-color: #ffffff;
+    margin: 2em auto;
+    padding: 1em;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+#contact-form h2 {
+    font-family: 'Georgia', serif;
+    color: #007acc;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 1em;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #007acc;
+    color: white;
+    padding: 0.7em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #005f99;
+}
