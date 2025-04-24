@@ -1,90 +1,115 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background: linear-gradient(to bottom, #f7f7f7, #e0e0e0);
+    color: #444;
 }
 
 header {
-    background-color: #007acc;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: white;
-    padding: 2em;
+    padding: 3em 1em;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 h1 {
-    font-size: 3em;
-    font-family: 'Georgia', serif;
+    font-size: 2.8em;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-bottom: 0.2em;
 }
 
 h2 {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
+    color: #4e4e4e;
 }
 
 #about, #contact {
-    background-color: white;
-    margin: 2em auto;
-    padding: 1em;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin: 3em auto;
+    padding: 2em;
+    width: 85%;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+}
+
+#about:hover, #contact:hover {
+    transform: scale(1.02);
 }
 
 a {
-    color: #007acc;
-    text-decoration: none;
+    color: #6a11cb;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2575fc;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #222;
+    color: #eee;
     text-align: center;
     padding: 1em 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 0.9em;
 }
-/* Add this at the end of your existing styles.css file */
 
+/* Contact Form Styles */
 #contact-form {
-    background-color: #ffffff;
+    background-color: #fff;
     margin: 2em auto;
-    padding: 1em;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
+    padding: 2em;
+    width: 85%;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
 }
 
 #contact-form h2 {
     font-family: 'Georgia', serif;
-    color: #007acc;
+    color: #6a11cb;
+    margin-bottom: 1em;
 }
 
 #contact-form label {
     display: block;
-    margin-top: 1em;
+    margin-top: 1.2em;
+    font-weight: bold;
 }
 
 #contact-form input, #contact-form textarea {
     width: 100%;
-    padding: 0.5em;
+    padding: 0.7em;
     margin-top: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border 0.3s ease;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+    border: 1px solid #6a11cb;
+    outline: none;
 }
 
 #contact-form input[type="submit"] {
-    background-color: #007acc;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: white;
-    padding: 0.7em 1em;
+    padding: 0.8em 2em;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    margin-top: 1em;
+    margin-top: 1.5em;
+    font-size: 1em;
+    transition: background 0.3s ease;
 }
 
 #contact-form input[type="submit"]:hover {
-    background-color: #005f99;
+    background: linear-gradient(135deg, #5c0db0, #1f66d3);
 }
